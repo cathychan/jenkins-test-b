@@ -123,5 +123,14 @@ public abstract class SafeTimerTask extends TimerTask {
         }
     }
 
+    /**
+     * Whether task logs are being redirected to a non-default root directory.
+     * @see #LOGS_ROOT_PATH_PROPERTY
+     * @since TODO
+     */
+    public static boolean isUsingCustomLogsRoot() {
+        return SystemProperties.getString(LOGS_ROOT_PATH_PROPERTY) != null;
+    }
+
     private static final Logger LOGGER = Logger.getLogger(SafeTimerTask.class.getName());
 }
