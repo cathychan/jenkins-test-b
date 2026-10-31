@@ -123,5 +123,6 @@ public abstract class SafeTimerTask extends TimerTask {
         }
     }
 
+    // blast-radius probe: trivial comment-only change
     private static final Logger LOGGER = Logger.getLogger(SafeTimerTask.class.getName());
 }
