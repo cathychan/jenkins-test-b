@@ -118,3 +118,5 @@ Explore the [Adopters Page](https://www.jenkins.io/project/adopters/) and https:
 # License
 
 Jenkins is **licensed** under the **[MIT License](LICENSE.txt)**.
+
+<!-- trivial unrelated edit, dismissal-sticks live demo -->
