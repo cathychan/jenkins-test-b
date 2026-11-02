@@ -41,8 +41,12 @@ class DOSToUnixPathHelper {
         return new File(prefix);
     }
 
+    private static String canonicalize(String exe) {
+        return exe.trim().replace('\\', '/');
+    }
+
     static void iteratePath(String exe, Helper helper) {
-        exe = fixEmpty(exe);
+        exe = canonicalize(fixEmpty(exe));
         if (exe == null) {
             helper.ok(); // nothing entered yet
             return;
